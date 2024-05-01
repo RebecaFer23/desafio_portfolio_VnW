@@ -1,6 +1,11 @@
 import Header from '../../components/Header/Header'
 import * as S from "./styled"
+// import * as C from '../../components/Cursor_styles'
 import { useForm } from 'react-hook-form'
+import whatsapp from '../../assets/img/whatsapp.png'
+import insta from '../../assets/img/instagram.png'
+import linkedin from '../../assets/img/linkedin.png'
+import github from '../../assets/img/github.png'
 
 
 export default function Contato() {
@@ -99,9 +104,30 @@ export default function Contato() {
                 Resetar
               </S.ResetButton>
             </S.FormGroup>
-
           </form>
         </S.FormContainer>
+        <S.Contact>
+          <button>
+            <a href="https://www.linkedin.com/feed/">
+              <img src={linkedin} alt="icone do linkedin" />
+            </a>
+          </button>
+          <button>
+            <a href="https://www.instagram.com/beca.fer_24/">
+              <img src={insta} alt="icone do instagram para contato" />
+            </a>
+          </button>
+          <button>
+            <a href="https://github.com/RebecaFer23">
+              <img src={github} alt="icone do github" />
+            </a>
+          </button>
+          <button>
+            <a href="https://web.whatsapp.com/">
+              <img src={whatsapp} alt="icone do whatsapp para contato" />
+            </a>
+          </button>
+        </S.Contact>
       </S.Container>
     </S.Main>
   )
