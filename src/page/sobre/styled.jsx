@@ -10,48 +10,78 @@ export const Main = styled.main`
 export const Container = styled.div`
   color: #ffffff;
 
-  @media screen and (max-width: 820px) {
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: start;
-  }
-
   .sobre {
     height: 7rem;
+    /* width: 100%; */
     grid-column: 1 / span 3;
+    @media screen and (max-width: 1030px){
+      width: 94vw;
+      height: 8rem;
+      /* grid-column: 1 / span 2; */
+
+    }
+    @media screen and (max-width: 1200px){
+      width: 60rem;
+    }
   }
+
   .interesses {
     height: 11.5rem;
     width: 30rem;
     grid-column: 1;
-    
+    @media screen and (max-width: 1030px){
+      width: 47vw;
+    }
   }
+
   .objetivos {
     height: 11.5rem;
     width: 30rem;
     grid-row: 2; 
     grid-column: 2;
+    @media screen and (max-width: 1030px){
+      width: 47vw;
+      /* margin-left: -2vw; */
+    }
   }
 `;
 
 export const Row = styled.div`
-  width: 96vw;
-height: 100%;
+  border: solid;
+  width: 94vw;
+  height: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 
   .experiencia {
-     height: auto;
-     width: auto;
+    height: auto;
+    width: auto;
     grid-column: 3;
-  grid-row: 2 / span 2;
+    grid-row: 2 / span 2;
+
+    @media screen and (max-width: 1400px){
+      grid-column: 1;
+      grid-row: 4;
+      height: 11.5rem;
+      width: 30rem;
+    }
+  
+    @media screen and (max-width: 1030px){
+      grid-column: 1;
+      grid-row: 4;
+      height: 11.5rem;
+      width: 47vw;
+    }
   }
 
   .jornada {
-    height: 11.5rem;
+    /* height: 35.5vh; */
     width: 30rem;
     grid-column: 1;
     grid-row: 3;
+    @media screen and (max-width: 1030px){
+      width: 47vw;
+    }
   }
 
   .aprimoramento {
@@ -59,7 +89,10 @@ height: 100%;
     height: 11.5rem;
     width: 30rem;
     grid-column: 2;
-  grid-row: 3; 
+    grid-row: 3; 
+    @media screen and (max-width: 1030px){
+      width: 47vw;
+    }
   }
 `;
 

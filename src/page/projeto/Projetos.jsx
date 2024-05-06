@@ -7,15 +7,20 @@ import 'swiper/css/effect-cards';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
-import port from "../../assets/img/OIP (1).jpg"
-import oip from "../../assets/img/OIP.jpg"
-import pc from "../../assets/img/pc.gif"
-import skill from "../../assets/img/skill.webp"
-import cod from "../../assets/img/cod.webp"
+import book from "../../assets/img/book.png"
+import movies from "../../assets/img/movies.png"
+import ods from "../../assets/img/ODS.png"
+import elemental from "../../assets/img/elemental.png"
+import flicky from "../../assets/img/flicky.png"
+import calculator from "../../assets/img/calculator.png"
+import galery from "../../assets/img/galery.png"
+import relog from "../../assets/img/relog.png"
+import wiki from "../../assets/img/miniWiki.png"
+import mec from "../../assets/img/mequi.png"
 
 export default function Projetos() {
 
-  const slides = [port, oip, pc, skill, cod]
+  const slides = [book, movies, ods, elemental, flicky, calculator, galery, relog, wiki,mec]
 
   return (
     <S.Main>

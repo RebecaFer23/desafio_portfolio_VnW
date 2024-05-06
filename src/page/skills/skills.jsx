@@ -15,13 +15,13 @@ export default function Projetos() {
           <div>
             <h2>Minhas habilidades</h2>
           </div>
-          <div>
+          <S.Kills>
           <img src={HTML} className="HTMLwidth" alt="" />
           <img src={CSS} alt="" />
           <img src={JS} alt="" />
           <img src={REACT} alt="" />
           <img src={STYLED} alt="" />
-          </div>
+          </S.Kills>
         </section>
         <section>
           <h3>
