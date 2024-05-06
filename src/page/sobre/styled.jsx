@@ -59,7 +59,7 @@ export const Row = styled.div`
     grid-column: 3;
     grid-row: 2 / span 2;
 
-    @media screen and (max-width: 1400px){
+    @media screen and (max-width: 1200px){
       grid-column: 1;
       grid-row: 4;
       height: 11.5rem;
