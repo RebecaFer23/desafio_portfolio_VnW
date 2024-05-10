@@ -8,23 +8,50 @@ export const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+
   .my-swiper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: 30.5rem;
   }
-  h3 {
-    color: #000;
+  
+  .swiper-pagination-container {
+    text-align: center;
   }
+  
 `;
+
 export const BoxSlide = styled.div`
-  /* border: solid 2px red; */
-  margin: 0px 10px;
-  width: 90vw;
+  width: 98vw;
+  height: 30.6rem;
   .slide-item img {
-    width: 100%;
+    width: 81%;
     height: 100%;
     object-fit: cover;
+  }
+  
+  .swiper-pagination-bullet {
+    background-color: #1d0101;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #ffffff;
+    box-shadow: 0px 1px 5px rgb(255, 255, 255);
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: #021d1d;
+    width: 8px;
+    height: 8px;
+  }
+`;
+
+export const Nav = styled.div`
+  .swiper-button-prev,
+  .swiper-button-next {
+    color: #10d6dd;
+  }
+
+  .swiper-button-prev:hover,
+  .swiper-button-next:hover {
+    color: rgb(231, 238, 240);
+    text-shadow: 0px 1px 8px #10d6dd;
   }
 `;
