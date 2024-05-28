@@ -11,17 +11,15 @@ export const Container = styled.div`
   color: #ffffff;
 
   .sobre {
+    width: 100%;
     height: 7rem;
-    /* width: 100%; */
     grid-column: 1 / span 3;
-    @media screen and (max-width: 1030px){
-      width: 94vw;
-      height: 8rem;
-      /* grid-column: 1 / span 2; */
-
+    @media screen and (max-width: 1220px){
+      width: 85vw;
     }
-    @media screen and (max-width: 1200px){
-      width: 60rem;
+    @media screen and (max-width: 580px){
+      width: 90vw;
+      height: 11.5rem;
     }
   }
 
@@ -29,8 +27,11 @@ export const Container = styled.div`
     height: 11.5rem;
     width: 30rem;
     grid-column: 1;
-    @media screen and (max-width: 1030px){
-      width: 47vw;
+    @media screen and (max-width: 1220px){
+      width: 42.5vw;
+    }
+    @media screen and (max-width: 580px){
+      width: 90vw;
     }
   }
 
@@ -39,59 +40,77 @@ export const Container = styled.div`
     width: 30rem;
     grid-row: 2; 
     grid-column: 2;
-    @media screen and (max-width: 1030px){
-      width: 47vw;
-      /* margin-left: -2vw; */
+    @media screen and (max-width: 1220px){
+      width: 42.5vw;
     }
+    @media screen and (max-width: 580px){
+      grid-column: 1;
+      width: 90vw;
+    }
+  }
+
+  @media screen and (max-width: 1220px){
+    width: 85vw;
+  }
+  @media screen and (max-width: 580px){
+    width: 90vw;
   }
 `;
 
 export const Row = styled.div`
-  border: solid;
   width: 94vw;
   height: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  @media screen and (max-width:580px){
+      grid-template-columns: 1fr;
 
+    }
   .experiencia {
     height: auto;
     width: auto;
     grid-column: 3;
     grid-row: 2 / span 2;
 
-    @media screen and (max-width: 1200px){
-      grid-column: 1;
+    @media screen and (max-width: 1220px){
+      margin-left: -42.4vw;
+      grid-column: 2;
       grid-row: 4;
       height: 11.5rem;
-      width: 30rem;
+      width: 85vw;
     }
-  
-    @media screen and (max-width: 1030px){
+    @media screen and (max-width: 580px){
       grid-column: 1;
-      grid-row: 4;
-      height: 11.5rem;
-      width: 47vw;
+      margin-left: 0px;
+      width: 90vw;
     }
   }
 
   .jornada {
-    /* height: 35.5vh; */
+    height: 11.5rem;
     width: 30rem;
     grid-column: 1;
     grid-row: 3;
-    @media screen and (max-width: 1030px){
-      width: 47vw;
+    @media screen and (max-width: 1220px){
+      width: 42.5vw;
+    }
+    @media screen and (max-width: 580px){
+      width: 90vw;
     }
   }
 
   .aprimoramento {
-    
     height: 11.5rem;
     width: 30rem;
     grid-column: 2;
-    grid-row: 3; 
-    @media screen and (max-width: 1030px){
-      width: 47vw;
+    grid-row: 3;
+    @media screen and (max-width: 1220px){
+      width: 42.5vw;
+    } 
+    @media screen and (max-width: 580px){
+      grid-column: 1;
+      grid-row: 5 / span 3;
+      width: 90vw;
     }
   }
 `;
@@ -141,4 +160,11 @@ export const Verso = styled.div`
   padding: 20px;
   text-shadow: #131212 2px 1px 1px;
   color: #ffffff;
+
+  @media screen and (max-width: 950px){
+    font-size: 1.8vw;
+  }
+  @media screen and (max-width: 580px){
+    font-size: 3vw;
+  }
 `;

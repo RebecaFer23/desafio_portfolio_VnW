@@ -47,7 +47,7 @@ export const BoxLogo = styled.div`
     margin: .8rem 0 .8rem 1.2rem;
     width: 4.5rem;
     border-radius: 8%;
-    animation: spin 2s linear infinite;
+    /* animation: spin 2s linear infinite; */
   }
     @keyframes spin {from {transform:rotatey(0deg);} to{transform:rotatey(360deg)}
   }

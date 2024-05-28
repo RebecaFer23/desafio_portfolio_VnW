@@ -3,6 +3,8 @@ import * as S from "./styled";
 import HTML from "../../assets/img/html.png";
 import CSS from "../../assets/img/css.png";
 import JS from "../../assets/img/javascript.png";
+import GIT from "../../assets/img/github(1).png";
+import VS from "../../assets/img/vs_code.png";
 import REACT from "../../assets/img/react.png";
 import STYLED from "../../assets/img/styledcomponents.png";
 
@@ -16,11 +18,13 @@ export default function Projetos() {
             <h2>Minhas habilidades</h2>
           </div>
           <S.Kills>
-          <img src={HTML} className="HTMLwidth" alt="" />
-          <img src={CSS} alt="" />
-          <img src={JS} alt="" />
-          <img src={REACT} alt="" />
-          <img src={STYLED} alt="" />
+          <img src={HTML} className="HTMLwidth" alt="icone da logo HTML" />
+          <img src={CSS} alt="icone da logo CSS" />
+          <img src={GIT} alt="icone da logo Github" />
+          <img src={JS} alt="icone da logo JavaScript" />
+          <img src={VS} alt="icone da logo VS Code" />
+          <img src={REACT} alt="icone da logo React" />
+          <img src={STYLED} alt="icone da logo Styled Components" />
           </S.Kills>
         </section>
         <section>
